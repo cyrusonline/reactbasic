@@ -79,11 +79,5 @@ const styles = StyleSheet.create({
   },
   placeButton:{
     width:"30%"
-  },
-  listContainer:{
-    width:"50%",
-    marginBottom:5,
-    padding:10,
-    backgroundColor:"#eee"
   }
 });
