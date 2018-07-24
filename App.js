@@ -51,7 +51,7 @@ placeSubmitHandler = () =>{
         />
 
         </View>
-        <View style={styles.listContainer}>
+        <View style={styles.listContainer} >
       {placesOutput}
         </View>
       </View>
@@ -79,5 +79,8 @@ const styles = StyleSheet.create({
   },
   placeButton:{
     width:"30%"
+  },
+  listContainer:{
+    width:"100%"
   }
 });
