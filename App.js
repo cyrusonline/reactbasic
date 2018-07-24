@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button, Alert, FlatList } from 'react-native';
 import ListItem from './src/components/ListItem/ListItem';
+import Placelist from './src/components/PlaceList/PlaceList';
 export default class App extends React.Component {
   state = {
     placeName:'',
-    places:['asdfsaf','asdfasfsadf']
+    places:[]
   }
 
 placeNameChangedHandler = val =>{
@@ -45,15 +46,15 @@ placeSubmitHandler = () =>{
         style={styles.placeInput}
         />
         <Button 
-        title="Add" 
+        title="Adds" 
         style={styles.placeButton}
         onPress = {this.placeSubmitHandler}
         />
 
         </View>
-        <View style={styles.listContainer} >
-      {placesOutput}
-        </View>
+       <Placelist 
+       places = {this.state.places}
+       />
       </View>
     );
   }
@@ -79,8 +80,5 @@ const styles = StyleSheet.create({
   },
   placeButton:{
     width:"30%"
-  },
-  listContainer:{
-    width:"100%"
   }
 });
