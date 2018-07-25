@@ -1,60 +1,33 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button, Alert, FlatList } from 'react-native';
 import ListItem from './src/components/ListItem/ListItem';
-import Placelist from './src/components/PlaceList/PlaceList';
+import PlaceList from './src/components/PlaceList/PlaceList';
+import PlaceInput from './src/components/PlaceInput/PlaceInput';
 export default class App extends React.Component {
   state = {
-    placeName:'',
     places:[]
   }
 
-placeNameChangedHandler = val =>{
-  this.setState({
-    placeName:val
-  });
-};
-handlePressButton = ()=>{
-  Alert.alert({places})
-}
-placeSubmitHandler = () =>{
-  
-  // if (this.state.placeName.trim()==="") {
-  //   return;
-  // }
-
-  this.setState(prevState =>{
+  placeAddedHandler = placeName =>{
+   this.setState(prevState =>{
     return{
-      places: prevState.places.concat(prevState.placeName)
+      places:prevState.places.concat(placeName)
     }
-  })
-}
-
+   });
+  }
   render() {
-    const placesOutput = this.state.places.map((place,i) =>(
-      <ListItem key={i} placeName={place}/>
-    ));
+    // const placesOutput = this.state.places.map((place,i) =>(
+    //   <ListItem key={i} placeName={place}/>
+    // ));
     return (
       <View style={styles.container}>
    
       
-        <View style={styles.inputContainer}>
-        <TextInput 
-        style={{width:300}}
-        placeholder = "some places"
-        value = {this.state.placeName} 
-        onChangeText={this.placeNameChangedHandler}
-        style={styles.placeInput}
-        />
-        <Button 
-        title="Adds" 
-        style={styles.placeButton}
-        onPress = {this.placeSubmitHandler}
-        />
+       <PlaceInput onPlaceAdded = {this.placeAddedHandler}/>
+       <PlaceList places={this.state.places}/>
+      
 
-        </View>
-       <Placelist 
-       places = {this.state.places}
-       />
+     
       </View>
     );
   }

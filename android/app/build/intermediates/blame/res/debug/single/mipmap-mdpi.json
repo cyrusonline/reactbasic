@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/Users/cyruschan/Documents/reactapp/reactbasic/android/C:\\reactproject\\reactapp\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "/Users/cyruschan/Documents/reactapp/reactbasic/android/C:\\reactproject\\reactapp\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\cyruschan\\Documents\\reactapp\\reactbasic\\android\\C:\\reactproject\\reactapp\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\cyruschan\\Documents\\reactapp\\reactbasic\\android\\C:\\reactproject\\reactapp\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/cyruschan/Documents/reactapp/reactbasic/android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
-        "source": "/Users/cyruschan/Documents/reactapp/reactbasic/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\reactproject\\reactapp\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\reactproject\\reactapp\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\cyruschan\\Documents\\reactapp\\reactbasic\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\cyruschan\\Documents\\reactapp\\reactbasic\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]
